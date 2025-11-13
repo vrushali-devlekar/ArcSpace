@@ -304,6 +304,123 @@ main {
             }
         }
     }
+
+    section.project {
+        padding: 1.8rem 0.9rem;
+        width: 100%;
+
+        .card {
+            .text {
+                padding: 0.7rem 0rem;
+
+                h5 {
+                    font-weight: 400;
+                    padding: 0.5rem 0rem;
+                }
+
+                h1 {
+                    padding: 0.5rem 0rem;
+                    font-size: 1.4rem;
+                    line-height: 1.2;
+                    font-weight: 500;
+                }
+            }
+
+            .project-main {
+                display: flex;
+                width: 100%;
+                flex-direction: column;
+                gap: 0.6rem;
+
+                .cont1 {
+                    // opacity: 100%;
+                    background-image: url(https://i.pinimg.com/736x/e9/be/1b/e9be1b628fa9a9481b1fe2a5c865d2e7.jpg);
+                    position: relative;
+                    height: 18rem;
+                    border-radius: 0.6rem;
+                    background-position: center;
+                    background-size: cover;
+                    overflow: hidden;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    gap: 0.5rem;
+
+                    .top {
+                        padding: 2.1rem 1rem;
+                        z-index: 2;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        color: rgb(255, 255, 255);
+                        // background-color: rgba(0, 0, 0, 0.274);
+                        h5 {
+                            font-weight: 500;
+                            font-size: 0.7rem;
+                        }
+
+                        .right {
+                            display: flex;
+                            gap: 0.4rem;
+
+                            h5 {
+                                border-radius: 1.4rem;
+                                padding: 0.4rem 0.6rem;
+                                border: 1.4px solid whitesmoke;
+                                // background-color: rgba(0, 0, 0, 0.315);
+                                color: white;
+                                // letter-spacing: 0.1rem;
+                                font-size: 0.6rem;
+                            }
+                        }
+                    }
+
+                    .bottom {
+                        position: absolute;
+                        background: linear-gradient(transparent, rgba(0, 0, 0, 0.721));
+                        bottom: -40%;
+                        // z-index: 7;
+                        transition: all ease 0.5s;
+                        color: aliceblue;
+                        padding: 1rem;
+
+                        p {
+                            font-size: 0.6rem;
+                        }
+
+                    }
+                }
+
+                .cont1:hover {
+                    .top {
+                        transform: translateY(-2.5rem);
+                    }
+
+                    .bottom {
+                        bottom: 0;
+                    }
+                }
+
+                .project-main {
+                    .cont1:hover {
+                        opacity: 100%;
+                    }
+                }
+
+                .cont {
+                    background-image: url(https://i.pinimg.com/736x/e1/9d/ec/e19dec4d3271fefb74d717b9f4053de4.jpg);
+                }
+
+                .cont-sec {
+                    background-image: url(https://i.pinimg.com/1200x/dc/9a/6a/dc9a6a9492a383ebd080e73fb8fc0873.jpg);
+                }
+
+                .cont-last {
+                    background-image: url(https://i.pinimg.com/1200x/be/11/51/be115166ec351892926c88ec31e97d8f.jpg);
+                }
+            }
+        }
+    }
 }
 
 @media (min-width:768px) {
@@ -464,9 +581,10 @@ main {
                 .head {
                     margin-bottom: 1rem;
                     width: 44rem;
+
                     h1 {
                         font-size: 2.2rem;
-                       text-transform: capitalize;
+                        text-transform: capitalize;
                     }
                 }
 
@@ -478,11 +596,11 @@ main {
                     .left {
                         height: 34rem;
                         width: 50%;
-                        
-                     
+
+
 
                         .flexbox {
-                           
+
 
                             .info {
                                 padding-top: 18rem;
@@ -494,21 +612,21 @@ main {
                                     color: white;
                                     margin-bottom: 0.3rem;
                                     font-size: 1.6rem;
-                                    
+
                                 }
 
                                 p {
-                                 
+
                                     margin-bottom: 0.6rem;
                                     font-size: 1rem;
                                 }
 
                                 button {
-                                   
+
                                     padding: 0.6rem 0.8rem;
                                     border: 1.4px solid whitesmoke;
                                     background-color: #00000031;
-                                   
+
                                     font-size: 0.8rem;
                                 }
                             }
@@ -522,9 +640,9 @@ main {
 
                         .flexbox1 {
 
-                          
+
                             height: 34rem;
-                           
+
                             width: 50%;
                             padding-top: 18rem;
 
@@ -542,10 +660,10 @@ main {
 
                         .flexbox2 {
 
-                             height: 34rem;
-                            
+                            height: 34rem;
+
                             width: 50%;
-                           
+
                             padding-top: 18rem;
 
                             .txt {
@@ -555,6 +673,48 @@ main {
                                     font-size: 1.6rem;
                                     font-weight: 600;
                                 }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        section.project {
+
+            // width: 100%;
+            .card {
+                .text {
+                    margin-bottom: 0.6rem;
+                    h1 {
+                        font-size: 2.2rem;
+                        width: 36rem;
+                    }
+                }
+
+                .project-main {
+                    display: flex;
+                    // width: 100%;
+                    flex-wrap: wrap;
+                    flex-direction: row;
+                    gap: 0.8rem;
+
+                    .cont1 {
+                        width: calc(50% - 0.4rem);
+                        height: 20rem;
+                        .top{
+                            h5{
+                                font-size: 1.4rem;
+                            }
+                            .right{
+                                h5{
+                                    font-size: 1rem;
+                                }
+                            }
+                        }
+                        .bottom{
+                            p{
+                                font-size: 0.9rem;
                             }
                         }
                     }

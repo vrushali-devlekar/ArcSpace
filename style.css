@@ -237,6 +237,94 @@ main section.serv .card .box .right .flexbox2 .txt h3 {
   font-size: 1rem;
   font-weight: 600;
 }
+main section.project {
+  padding: 1.8rem 0.9rem;
+  width: 100%;
+}
+main section.project .card .text {
+  padding: 0.7rem 0rem;
+}
+main section.project .card .text h5 {
+  font-weight: 400;
+  padding: 0.5rem 0rem;
+}
+main section.project .card .text h1 {
+  padding: 0.5rem 0rem;
+  font-size: 1.4rem;
+  line-height: 1.2;
+  font-weight: 500;
+}
+main section.project .card .project-main {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+main section.project .card .project-main .cont1 {
+  background-image: url(https://i.pinimg.com/736x/e9/be/1b/e9be1b628fa9a9481b1fe2a5c865d2e7.jpg);
+  position: relative;
+  height: 18rem;
+  border-radius: 0.6rem;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+main section.project .card .project-main .cont1 .top {
+  padding: 2.1rem 1rem;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgb(255, 255, 255);
+}
+main section.project .card .project-main .cont1 .top h5 {
+  font-weight: 500;
+  font-size: 0.7rem;
+}
+main section.project .card .project-main .cont1 .top .right {
+  display: flex;
+  gap: 0.4rem;
+}
+main section.project .card .project-main .cont1 .top .right h5 {
+  border-radius: 1.4rem;
+  padding: 0.4rem 0.6rem;
+  border: 1.4px solid whitesmoke;
+  color: white;
+  font-size: 0.6rem;
+}
+main section.project .card .project-main .cont1 .bottom {
+  position: absolute;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.721));
+  bottom: -40%;
+  transition: all ease 0.5s;
+  color: aliceblue;
+  padding: 1rem;
+}
+main section.project .card .project-main .cont1 .bottom p {
+  font-size: 0.6rem;
+}
+main section.project .card .project-main .cont1:hover .top {
+  transform: translateY(-2.5rem);
+}
+main section.project .card .project-main .cont1:hover .bottom {
+  bottom: 0;
+}
+main section.project .card .project-main .project-main .cont1:hover {
+  opacity: 100%;
+}
+main section.project .card .project-main .cont {
+  background-image: url(https://i.pinimg.com/736x/e1/9d/ec/e19dec4d3271fefb74d717b9f4053de4.jpg);
+}
+main section.project .card .project-main .cont-sec {
+  background-image: url(https://i.pinimg.com/1200x/dc/9a/6a/dc9a6a9492a383ebd080e73fb8fc0873.jpg);
+}
+main section.project .card .project-main .cont-last {
+  background-image: url(https://i.pinimg.com/1200x/be/11/51/be115166ec351892926c88ec31e97d8f.jpg);
+}
 
 @media (min-width: 768px) {
   main section.top {
@@ -411,5 +499,31 @@ main section.serv .card .box .right .flexbox2 .txt h3 {
   main section.serv .card .box .right .flexbox2 .txt h3 {
     font-size: 1.6rem;
     font-weight: 600;
+  }
+  main section.project .card .text {
+    margin-bottom: 0.6rem;
+  }
+  main section.project .card .text h1 {
+    font-size: 2.2rem;
+    width: 36rem;
+  }
+  main section.project .card .project-main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 0.8rem;
+  }
+  main section.project .card .project-main .cont1 {
+    width: calc(50% - 0.4rem);
+    height: 20rem;
+  }
+  main section.project .card .project-main .cont1 .top h5 {
+    font-size: 1.4rem;
+  }
+  main section.project .card .project-main .cont1 .top .right h5 {
+    font-size: 1rem;
+  }
+  main section.project .card .project-main .cont1 .bottom p {
+    font-size: 0.9rem;
   }
 }/*# sourceMappingURL=style.css.map */
