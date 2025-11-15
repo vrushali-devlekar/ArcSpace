@@ -774,7 +774,7 @@ main section.footer .card .box .end .last {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 59rem;
+    width: 100%;
     gap: 0.7rem;
   }
   main section.footer .card .box .bottom .left {
@@ -804,7 +804,7 @@ main section.footer .card .box .end .last {
     font-size: 1rem;
   }
   main section.footer .card .box .end {
-    width: 59rem;
+    width: 100%;
   }
   main section.footer .card .box .end .last {
     font-size: 1rem;
