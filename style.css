@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -17,7 +17,7 @@ html {
 
 main {
   overflow: hidden;
-  font-family: "Noto Sans";
+  font-family: "Schibsted Grotesk", sans-serif;
 }
 main section.top {
   width: 100%;
@@ -427,6 +427,7 @@ main section.footer .card .top {
 main section.footer .card .top h1 {
   color: aliceblue;
   text-transform: capitalize;
+  text-align: center;
 }
 main section.footer .card .top .btn {
   display: flex;
@@ -559,11 +560,13 @@ main section.footer .card .box .end .last {
     font-size: 1.2rem;
   }
   main section.about {
-    padding: 1.6rem 0.9rem;
-    gap: 1.4rem;
+    padding: 2.6rem 3rem;
+    gap: 1.7rem;
   }
   main section.about .text h5 {
     font-weight: 400;
+    font-size: 1.2rem;
+    letter-spacing: 1.3;
   }
   main section.about .head {
     width: 100%;
@@ -576,49 +579,58 @@ main section.footer .card .box .end .last {
     width: 52%;
   }
   main section.about .head .left h1 {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     font-weight: 500;
   }
   main section.about .head .right {
     width: 48%;
   }
   main section.about .head .right p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
   }
   main section.about .head .right button {
     padding: 0.7rem 0.9rem;
     font-size: 0.9rem;
   }
   main section.about .numbers {
-    padding: 0.2rem 0.4rem;
+    padding: 0.2rem 1rem;
     width: 100%;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    gap: 0.4rem;
+    gap: 0.7rem;
   }
   main section.about .numbers .box {
-    background-color: rgba(245, 245, 220, 0.29);
-    padding: 0.3rem 0.6rem;
-    width: 42%;
+    background-color: rgba(245, 245, 220, 0.176);
+    padding: 0.7rem 0.9rem;
+    width: 30%;
   }
   main section.about .numbers .box h1 {
-    font-size: 1.7rem;
-    font-weight: 400;
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 0.6rem 0rem;
   }
   main section.about .numbers .box p {
     font-size: 1.1rem;
-    color: rgba(0, 0, 0, 0.9);
+    color: rgba(0, 0, 0, 0.785);
+    line-height: 1.5;
   }
   main section.serv {
     width: 100%;
-    padding: 2.9rem 0.9rem;
+    padding: 3.5rem 3rem;
+  }
+  main section.serv .card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
   }
   main section.serv .card .text {
     margin-bottom: 1rem;
   }
   main section.serv .card .text h5 {
-    font-weight: 0.9rem;
+    font-size: 1.2rem;
     font-weight: 400;
   }
   main section.serv .card .head {
@@ -632,26 +644,26 @@ main section.footer .card .box .end .last {
   main section.serv .card .box {
     display: flex;
     flex-direction: row;
-    gap: 0.7rem;
+    gap: 2rem;
   }
   main section.serv .card .box .left {
     height: 34rem;
-    width: 50%;
+    width: 48%;
   }
   main section.serv .card .box .left .flexbox .info {
     padding-top: 18rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     width: -moz-fit-content;
     width: fit-content;
   }
   main section.serv .card .box .left .flexbox .info h3 {
     color: white;
-    margin-bottom: 0.3rem;
-    font-size: 1.6rem;
+    margin-bottom: 0.7rem;
+    font-size: 1.7rem;
   }
   main section.serv .card .box .left .flexbox .info p {
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.8rem;
     font-size: 1rem;
   }
   main section.serv .card .box .left .flexbox .info button {
@@ -661,13 +673,13 @@ main section.footer .card .box .end .last {
     font-size: 0.8rem;
   }
   main section.serv .card .box .right {
-    width: 50%;
+    width: 49%;
     display: flex;
-    gap: 0.5rem;
+    gap: 2rem;
   }
   main section.serv .card .box .right .flexbox1 {
     height: 34rem;
-    width: 50%;
+    width: 49%;
     padding-top: 18rem;
   }
   main section.serv .card .box .right .flexbox1 .txt {
@@ -676,10 +688,11 @@ main section.footer .card .box .end .last {
   main section.serv .card .box .right .flexbox1 .txt h3 {
     font-size: 1.6rem;
     font-weight: 600;
+    padding: 0.4rem 2rem;
   }
   main section.serv .card .box .right .flexbox2 {
     height: 34rem;
-    width: 50%;
+    width: 49%;
     padding-top: 18rem;
   }
   main section.serv .card .box .right .flexbox2 .txt {
@@ -688,11 +701,24 @@ main section.footer .card .box .end .last {
   main section.serv .card .box .right .flexbox2 .txt h3 {
     font-size: 1.6rem;
     font-weight: 600;
+    padding: 0.4rem 2rem;
+  }
+  main section.project {
+    padding: 3.5rem 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
   }
   main section.project .card .text {
     margin-bottom: 0.6rem;
   }
+  main section.project .card .text h5 {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
   main section.project .card .text h1 {
+    margin-bottom: 1.5rem;
+    line-height: 1.3;
     font-size: 2.2rem;
     width: 36rem;
   }
@@ -715,9 +741,13 @@ main section.footer .card .box .end .last {
   main section.project .card .project-main .cont1 .bottom p {
     font-size: 0.9rem;
   }
+  main section.popular {
+    padding: 3.5rem 3rem;
+  }
   main section.popular .card {
     width: 100%;
     flex-direction: row;
+    gap: 2rem;
   }
   main section.popular .card .left {
     width: 50%;
@@ -733,7 +763,11 @@ main section.footer .card .box .end .last {
   }
   main section.popular .card .right {
     width: 50%;
-    gap: 0.8rem;
+    gap: 3rem;
+  }
+  main section.popular .card .right .text h5 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
   }
   main section.popular .card .right .text h1 {
     width: 22rem;
@@ -741,12 +775,15 @@ main section.footer .card .box .end .last {
   }
   main section.popular .card .right .info h3 {
     font-size: 1.8rem;
+    margin-bottom: 1rem;
   }
   main section.popular .card .right .info h5 {
     font-size: 1.3rem;
+    margin-bottom: 0.5rem;
   }
   main section.popular .card .right .info p {
     font-size: 1.2rem;
+    margin-bottom: 1.5rem;
   }
   main section.popular .card .right .btn button {
     padding: 0.7rem 0.9rem;
@@ -756,7 +793,9 @@ main section.footer .card .box .end .last {
     padding: 2rem 2.5rem;
   }
   main section.footer .card .top h1 {
+    margin-bottom: 1rem;
     font-size: 5.3rem;
+    text-align: center;
   }
   main section.footer .card .top .btn button {
     padding: 0.8rem 1rem;
@@ -769,7 +808,7 @@ main section.footer .card .box .end .last {
     font-size: 1.3rem;
   }
   main section.footer .card .box .bottom {
-    padding: 1rem;
+    padding: 2rem;
     margin-top: 2rem;
     display: flex;
     flex-direction: row;
@@ -782,9 +821,12 @@ main section.footer .card .box .end .last {
   }
   main section.footer .card .box .bottom .left h4 {
     font-size: 1.6rem;
+    margin-bottom: 1rem;
   }
   main section.footer .card .box .bottom .left p {
     font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: 0.1rem;
   }
   main section.footer .card .box .bottom .right {
     display: flex;
@@ -793,15 +835,23 @@ main section.footer .card .box .end .last {
   }
   main section.footer .card .box .bottom .right .part .link h4 {
     font-size: 1.1rem;
+    margin-bottom: 1rem;
   }
   main section.footer .card .box .bottom .right .part .link p {
+    margin-right: 1rem;
+    line-height: 1.5;
+    letter-spacing: 0.1rem;
     font-size: 1rem;
   }
   main section.footer .card .box .bottom .right .part1 .link h4 {
     font-size: 1.1rem;
+    margin-bottom: 1rem;
   }
   main section.footer .card .box .bottom .right .part1 .link p {
     font-size: 1rem;
+    margin-right: 1rem;
+    line-height: 1.5;
+    letter-spacing: 0.1rem;
   }
   main section.footer .card .box .end {
     width: 100%;
